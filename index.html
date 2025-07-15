@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full House Production</title>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Work Sans', sans-serif;
+      background-color: #0a0a0a;
+      color: #f2f2f2;
+      line-height: 1.6;
+    }
+    .hero {
+      height: 100vh;
+      background: url('fh.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .hero h1,
+    .hero p {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #ffffff;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-top: 1rem;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #e60073;
+    }
+    .about, .services {
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .gallery img {
+      max-width: 100%;
+      width: 360px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .contact {
+      background-color: #141414;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    .contact input,
+    .contact textarea {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .contact button {
+      padding: 0.75rem;
+      background-color: #e60073;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background-color: #cc005f;
+    }
+    footer {
+      background-color: #111;
+      color: #888;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Full House Production</h1>
+    <p>Film, Video, Music, TV Series & Concerts</p>
+  </div>
+
+  <section class="about">
+    <h2 class="section-title">About Us</h2>
+    <p>Full House Production is a visionary media company delivering exceptional work in film, television, music, and live events. We blend storytelling and technology to craft unforgettable experiences.</p>
+  </section>
+
+  <section class="services">
+    <h2 class="section-title">Our Services</h2>
+    <p>🎥 Film & Documentary Production<br>
+    🎬 TV & Web Series Creation<br>
+    🎶 Music Videos & Audio Recording<br>
+    🎤 Concert & Festival Coverage<br>
+    📽️ Corporate & Commercial Content</p>
+  </section>
+
+  <section class="gallery">
+    <img src="fh2.jpg" alt="Gallery Image 1">
+    <img src="full-house-2-armenia.jpg" alt="Gallery Image 2">
+  </section>
+
+  <section class="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Full House Production. Crafted with passion.
+  </footer>
+</body>
+</html>
